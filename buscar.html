@@ -51,7 +51,29 @@
             </div>
           </div>
           </nav>
-          <main>
+          <main class="flex-grow-1 d-flex">
+            <div class="text-bg-dark container-fluid flex-grow-1 bg-image d-flex flex-column align-items-center justify-content-center" id="main-bg-img">
+              <div class="col-10 col-sm-8 col-md-6 col-lg-4 my-4">
+                <form id="form-cep" novalidate>
+                  <h3 class="h5 text-center text-align mb-3">
+                    Digite o CEP desejado
+                  </h3>
+                  <div class="input-group mb-5 has-validation">
+                    <div class="form-floating text-dark bg-transparent" id="cep-input-div">
+                    <input type="text"
+                      name="cep-input"
+                      id="cep-input"
+                      placeholder="CEP" class="form-control form-control-lg" required
+                    />
+                    <label for="cep-input">CEP</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Verificar</button>
+                    <div class="invalid-feedback">Digite um CEP válido</div>
+                  </div>
+                </form>
+                <section id="response-container"></section>
+              </div>
+            </div>
           </main>
           <footer class="text-center text-bg-dark">
             <section class="container pt-4 mb-4">
