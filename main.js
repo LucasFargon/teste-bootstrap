@@ -24,7 +24,7 @@ formCep.addEventListener("submit", (e) => {
             complemento: "Complemento",
             bairro: "Bairro",
             localidade: "Município",
-            estado: "Unidade Fedeativa",
+            estado: "Unidade Federativa",
             ddd: "DDD",
             ibge: "IBGE",
           };
